@@ -110,32 +110,30 @@ body {
 	color: #777;
 }
 
-.block_friends ul li {
-	display: block;
+.item {
 	width: 300px;
 	height: 45px;
 	list-style: none;
 	margin-bottom: 7px;
 	border-bottom: 1px solid #f3efef;
+	display: flex;
+	align-items: center;
 }
 
-.block_friends ul li img {
+.item img {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
 	display: inline-block;
-	float: left;
 }
 
-.block_friends ul li p {
+.item p {
 	display: inline-block;
 	color: #555;
-	line-height: 7px;
-	float: left;
-	margin-left: 5px;
+	margin-left: 10px;
 }
 
-.block_friends ul li i {
+.item i {
 	font-size: 1.1rem;
 	color: #999;
 	float: right;
@@ -143,19 +141,37 @@ body {
 	margin-right: 1rem;
 }
 
+.plus {
+	margin-left: auto;
+	font-size: 25px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.plus:hover {
+	color: #777;
+}
+
+.remove {
+	margin-left: auto;
+	font-size: 25px;
+	font-weight: bold;
+	transform: rotate(-45deg);
+}
+
+.remove:hover {
+	color: #777;
+}
+
 .common_friends_list {
 	border-right: 1px solid #f3efef;
 }
 
-.common_friends_list ul li i:hover {
-	cursor: pointer;
-	color: #777;
-}
 
-.selected_friend_list > ul > li i:hover {
-	cursor: pointer;
-	color: #777;
-}
+/*.selected_friend_list > ul > li i:hover {*/
+	/*cursor: pointer;*/
+	/*color: #777;*/
+/*}*/
 
 .save {
 	height: 35px;
@@ -183,3 +199,5 @@ body {
 .save a:hover {
 	background: #ff6838;
 }
+
+
