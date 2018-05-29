@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="Ru-ru">
+<head>
+  <meta charset="UTF-8">
+  <title>VK-friendfilter</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://vk.com/js/api/openapi.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <div class="header__title">Выберите друзей</div>
+  </div>
+  <div class="search-wrap">
+    <input class="search" id="search1" type="text" placeholder="Начните вводить имя друга">
+    <input class="search" id="search2" type="text" placeholder="Начните вводить имя друга">
+  </div>
+  <div class="title-wrap">
+    <div class="friend-title">Ваши друзья</div>
+    <div class="friend-title">Друзья в списке</div>
+  </div>
+  <div class="wrapper_friends">
+    <div class="block_friends common_friends_list">
+      <ul ondragenter="return dragenter(event)"
+          ondrop="return dragdrop(event)"
+          ondragover="return dragover(event)">
+      </ul>
+    </div>
+    <div class="block_friends selected_friend_list">
+      <ul id="selected_friend_list" ondragenter="return dragEnter(event)"
+          ondrop="return dragDrop(event)"
+          ondragover="return dragOver(event)"
+          >
+      </ul>
+    </div>
+
+  </div>
+  <div class="save">
+    <a href="#">Сохранить</a>
+  </div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

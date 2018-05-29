@@ -1,0 +1,185 @@
+
+html {
+	font-size: 16px;
+	font-family: Roboto, sans-serif;
+	box-sizing: content-box;
+	font-weight: 400;
+}
+
+body {
+	transition: all .2s;
+	background-color: #999999;
+	text-decoration: none;
+	position: relative;
+}
+
+.wrapper {
+	width: 680px;
+	height: 600px;
+	margin: 0 auto;
+	color: #fff
+
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	background: #FF8F6B;
+	border-radius: 7px 7px 0 0;
+	height: 45px;
+}
+
+.header__title {
+	margin-left: 25px;
+	font-size: 24px;
+}
+
+.search-wrap {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 35px;
+	background: #eee;
+}
+
+.search {
+	width: 300px;
+	padding-left: 30px;
+	border: none;
+	border-radius: 50px;
+	height: 21px;
+}
+
+.title-wrap {
+	display: flex;
+	justify-content: space-between;
+	height: 36px;
+	color: #555;
+	text-align: left;
+	border-bottom: 1px solid #f3efef;
+	line-height: 35px;
+	background: #fff;
+}
+
+.friend-title {
+	font-weight: bold;
+	font-size: 16px;
+	width: 50%;
+	padding-left: 20px;
+}
+
+
+.wrapper .search_wrap .search i {
+	color: #777;
+	font-size: .8rem;
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	position: absolute;
+	top: 12px;
+	left: 12px;
+}
+
+.wrapper .search_wrap .search h4 {
+	color: #555;
+	height: 35px;
+	margin: 7px 0 0 0;
+	padding-left: 10px;
+	text-align: left;
+	border-bottom: 1px solid #f3efef;
+	line-height: 35px;
+	background: #fff;
+}
+
+.wrapper_friends {
+	display: flex;
+}
+
+.block_friends {
+	height: 512px;
+	width: 50%;
+	background: #fff;
+	overflow: auto
+
+}
+
+.block_friends ul {
+	width: 96%;
+	height: 93%;
+	padding: 0 0 0 10px;
+	color: #777;
+}
+
+.block_friends ul li {
+	display: block;
+	width: 300px;
+	height: 45px;
+	list-style: none;
+	margin-bottom: 7px;
+	border-bottom: 1px solid #f3efef;
+}
+
+.block_friends ul li img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: inline-block;
+	float: left;
+}
+
+.block_friends ul li p {
+	display: inline-block;
+	color: #555;
+	line-height: 7px;
+	float: left;
+	margin-left: 5px;
+}
+
+.block_friends ul li i {
+	font-size: 1.1rem;
+	color: #999;
+	float: right;
+	line-height: 45px;
+	margin-right: 1rem;
+}
+
+.common_friends_list {
+	border-right: 1px solid #f3efef;
+}
+
+.common_friends_list ul li i:hover {
+	cursor: pointer;
+	color: #777;
+}
+
+.selected_friend_list > ul > li i:hover {
+	cursor: pointer;
+	color: #777;
+}
+
+.save {
+	height: 35px;
+	background: #f3efef;
+	border-radius: 0 0 7px 7px;
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 50px;
+}
+
+.save a {
+	width: 100px;
+	height: 25px;
+	display: inline-block;
+	background: #FF8F6B;
+	border-radius: 50px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	font-size: .8rem;
+	margin: 5px 5px 0 0;
+	line-height: 25px;
+}
+
+.save a:hover {
+	background: #ff6838;
+}
