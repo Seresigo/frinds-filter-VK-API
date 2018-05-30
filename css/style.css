@@ -134,6 +134,7 @@ body {
 	font-size: 25px;
 	font-weight: bold;
 	transform: rotate(-45deg);
+	cursor: pointer;
 }
 
 .remove:hover {
