@@ -144,3 +144,37 @@ function dragdrop(ev) { // Событие отпускания элемента
     ev.stopPropagation(); // Останавливает дальнейшее погружение события
     return false;
 }
+
+/* Поиск по первому и второму списку */
+function isMatching(full=' ', chunk=' ') {
+    if (full.toLowerCase().indexOf(chunk.toLowerCase()) !== -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+let search1 = document.getElementById('search1');
+search1.addEventListener('input', () => {
+    let arr_left_column = document.querySelectorAll('.common_friends_list ul li p');
+    render(arr_left_column,search1);
+});
+let search2 = document.getElementById('search2');
+search2.addEventListener('input', () => {
+    let arr_right_column = document.querySelectorAll('.selected_friend_list ul li p');
+    render(arr_right_column,search2);
+});
+
+// функция рендеринга
+function render(arr=' ',element=' ') {
+    for (let key in arr) {
+        if(isMatching(arr[key].textContent, element.value)) {
+            for(let i = 0; i < arr.length; i++){
+                arr[key].parentNode.style.display = 'flex';
+            }
+        } else if (!(isMatching(arr[key].textContent, element.value))) {
+            for(let i = 0; i < arr.length; i++){
+                arr[key].parentNode ? arr[key].parentNode.style.display = 'none' : '';
+            }
+        }
+    }
+}
